@@ -1,0 +1,22 @@
+# Top-level .gitignore
+
+# Node modules (both frontend and backend)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build folders
+client/build/
+client/dist/
+server/build/
+
+# Environment variables
+**/.env
+
+# OS files
+.DS_Store
+Thumbs.db
