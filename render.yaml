@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sociopedia-client
+    env: static
+    buildCommand: |
+      cd client
+      chmod +x node_modules/.bin/react-scripts
+      npm install
+      npm run build
+    staticPublishPath: client/build
+    envVars:
+      - key: REACT_APP_BASE_URL
+        value: https://socio-backend-qkp1.onrender.com
